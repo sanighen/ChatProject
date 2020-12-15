@@ -9,6 +9,7 @@ import java.net.Socket;
 import lib.Action;
 import lib.Connection;
 import lib.Message;
+import lib.Operation;
 
 public class ServerChatApplication {
 
@@ -21,7 +22,7 @@ public class ServerChatApplication {
 
 		System.out.println("SERVER >>> client sent: " + con.fetch());
 //        con.send(new Message("Hello back"));
-		con.send(new Action("CONFIRMED"));
+		con.send(new Action(Operation.SENDMESSAGE));
 	}
 
 }

@@ -4,23 +4,23 @@ import java.io.Serializable;
 
 public class Action implements Serializable {
 
-	private String name;
+	private Operation type;
 
-	public Action(String name) {
-		this.name = name;
+	public Action(Operation type) {
+		this.type = type;
 	}
 
-	public String getName() {
-		return name;
+	public Operation getType() {
+		return type;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setType(Operation type) {
+		this.type = type;
 	}
 
 	@Override
 	public String toString() {
-		return "Action [name=" + name + "]";
+		return "Action [type=" + type + "]";
 	}
-
+	
 }

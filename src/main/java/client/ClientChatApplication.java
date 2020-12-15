@@ -5,6 +5,7 @@ import java.io.IOException;
 import lib.Action;
 import lib.Connection;
 import lib.Message;
+import lib.Operation;
 import lib.User;
 import server.ServerChatApplication;
 
@@ -17,7 +18,7 @@ public class ClientChatApplication {
 //		msg.setFrom(new User("Mister Author"));
 //		msg.setTo(new User("Mister Reader"));
 
-		con.send(new Action("SIGN IN"));
+		con.send(new Action(Operation.SENDMESSAGE));
 
 		System.out.println("CLIENT >>> server sent: " + con.fetch());
 	}
