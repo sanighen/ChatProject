@@ -2,9 +2,9 @@ package lib;
 
 public enum Operation {
 
-	SIGNIN("Sign In"),
-	SIGNOUT("Sign Out"),
-	SENDMESSAGE("Hello");
+	SIGN_IN("Sign In"),
+	SIGN_OUT("Sign Out"),
+	SEND_MESSAGE("Hello");
 
 	private String action;
 

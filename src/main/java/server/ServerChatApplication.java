@@ -22,7 +22,7 @@ public class ServerChatApplication {
 
 		System.out.println("SERVER >>> client sent: " + con.fetch());
 //        con.send(new Message("Hello back"));
-		con.send(new Action(Operation.SENDMESSAGE));
+		con.send(new Action(Operation.SEND_MESSAGE));
 	}
 
 }
