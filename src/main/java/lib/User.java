@@ -20,8 +20,8 @@ public class User implements Serializable {
 
     @Override
     public String toString() {
-        return "User {" +
+        return "User [" +
                 "name='" + name + '\'' +
-                '}';
+                ']';
     }
 }
