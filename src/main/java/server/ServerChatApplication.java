@@ -40,8 +40,8 @@ public class ServerChatApplication {
 
 		Action act = (Action) con.fetch();
 
-//		if (act.getType().equals(Operation.USER_LIST))
-//			con.send(new Action(Operation.SUCCESS, users));
+		if (act.getType().equals(Operation.USER_LIST))
+			con.send(new Action(Operation.SUCCESS, users));
 	}
 
 }
